@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#fbf7ee">
+  <title>Happy 21st Birthday | A Scrapbook For My Best Friend</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Subtle Paper Grain Overlay -->
+  <div class="paper-grain-overlay"></div>
+
+  <!-- Main Viewport (Mobile-First Card Container) -->
+  <div id="app-viewport">
+
+    <!-- FLOATING TOP BAR: CHAPTER BADGE & MUSIC TOGGLE -->
+    <header class="vintage-progress-header">
+      <div id="chapter-badge" class="progress-chapter-badge">Chapter I: The Celebration</div>
+    </header>
+
+    <!-- FLOATING MUSIC PLAYER (Starts paused, tap to play sweet music box or custom audio) -->
+    <div id="music-toggle" class="vintage-music-player" title="Play / Pause Birthday Music">
+      <div id="vinyl-disc" class="vinyl-disc">
+        <div class="vinyl-center-dot"></div>
+      </div>
+      <span id="music-label" class="player-text">Music Box</span>
+      <span class="floating-notes">♪ ♫</span>
+    </div>
+
+    <!-- SCREENS CONTAINER -->
+    <main class="screens-wrapper">
+
+      <!-- =================================================================
+           SCREEN 1: OPENING HERO (REFERENCE IMAGE 1 RECREATION)
+           ================================================================= -->
+      <section id="screen-1" class="screen active">
+        <!-- Pressed Dried Flower (Top Right) -->
+        <svg class="pressed-flower s1-flower-top-right" viewBox="0 0 100 100" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M50 20C40 5 20 20 35 40C15 40 10 65 30 75C25 90 45 100 60 85C75 95 90 80 85 60C98 45 85 25 70 35C70 15 55 10 50 20Z"
+            fill="#e5d2b3" stroke="#bca482" stroke-width="1.2" opacity="0.9" />
+          <circle cx="52" cy="50" r="9" fill="#c99e56" />
+          <path d="M48 48L30 30M54 48L70 30M50 54L40 70M56 54L70 68" stroke="#8d7563" stroke-width="0.8"
+            stroke-dasharray="2 2" />
+        </svg>
+
+        <!-- Lipstick Kiss Mark (Top Right near Title) -->
+        <svg class="kiss-mark s1-kiss-1" viewBox="0 0 50 35" fill="#851c27" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 16C12 10 20 9 24 13C29 9 37 10 42 15C38 18 32 17 25 15C17 17 12 18 7 16Z" opacity="0.95" />
+          <path d="M9 19C15 17 21 17 25 18C29 17 35 17 40 19C36 26 30 29 25 28C19 29 13 26 9 19Z" opacity="0.9" />
+          <path d="M14 28C19 32 23 32 25 32C28 32 32 32 36 28C32 30 28 30.5 25 30.5C22 30.5 17 30 14 28Z"
+            opacity="0.7" />
+        </svg>
+
+        <!-- Header Typography -->
+        <div class="hero-screen-header">
+          <div class="hero-script-top">Happy</div>
+          <div class="hero-badge-21">Twenty-First Milestone</div>
+          <h1 class="hero-editorial-title">
+            BIRTH<span class="letter-accent">DAY</span>
+          </h1>
+        </div>
+
+        <!-- Centerpiece Portrait Polaroid (Uses cover photo with transparent/cutout framing) -->
+        <div class="hero-centerpiece">
+          <div class="hero-frame-container">
+            <div class="washi-tape" style="top: -12px; left: 30%; width: 90px; transform: rotate(-3deg);"></div>
+
+            <div class="hero-photo-wrapper">
+              <!-- If cover image exists, load it; fallback to artistic camera frame -->
+              <img src="C:\Users\SANJAY\Downloads\Delivary\birthday\images\cover.jpg" alt="Birthday Bestie"
+                onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <div class="hero-frame-caption">My favorite hooman</div>
+          </div>
+        </div>
+
+        <!-- Lipstick Kiss Mark Cluster (Bottom Right) -->
+        <svg class="kiss-mark s1-kiss-cluster" viewBox="0 0 50 35" fill="#851c27" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 16C12 10 20 9 24 13C29 9 37 10 42 15C38 18 32 17 25 15C17 17 12 18 7 16Z" opacity="0.95" />
+          <path d="M9 19C15 17 21 17 25 18C29 17 35 17 40 19C36 26 30 29 25 28C19 29 13 26 9 19Z" opacity="0.9" />
+        </svg>
+
+        <!-- Subtitle Box (Reference Image 1 Quote) -->
+        <div class="hero-subtitle-box">
+          <p class="hero-subtitle-text">
+            Happy Birthday Jaaanu.., wish you all the best,May you have all the good things in your life </p>
+          <p class="hero-subtitle-sub">
+            With luv VAVAA...
+          </p>
+        </div>
+
+        <!-- Corner Torn Antique Newspaper Scrap (Reference Image 1) -->
+        <div class="torn-newspaper-corner">
+          <p>
+            "PAAAAAPAPAAAAAAAAAAAAAAAMM"
+          </p>
+        </div>
+
+        <!-- Navigation Button -->
+        <button class="vintage-btn btn-burgundy" data-next-screen="2">
+          SURPRISE PRESS ME <span class="btn-arrow-icon">💌</span>
+        </button>
+      </section>
+
+
+      <!-- =================================================================
+           SCREEN 2: THE SURPRISE INVITATION (REFERENCE IMAGE 2 SCREEN 1)
+           ================================================================= -->
+      <section id="screen-2" class="screen">
+        <button class="vintage-back-btn" data-back-screen="1">← Cover</button>
+
+        <div class="invite-card-wrapper">
+          <!-- Playful Exclamation Sticker -->
+          <div class="exclamation-sticker">!</div>
+          <span class="invite-badge">A PERSONAL INVITATION</span>
+          <h2 class="invite-main-heading">HEY! YOU'VE GOT A MESSAGE!</h2>
+
+          <!-- Delicate Dried Herb Ornament -->
+          <svg width="60" height="24" viewBox="0 0 100 40" fill="none" style="margin: 8px auto 16px; display: block;"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 20Q50 5 90 20" stroke="#c99e56" stroke-width="1.5" fill="none" />
+            <circle cx="50" cy="12" r="3" fill="#851c27" />
+            <circle cx="30" cy="16" r="2.5" fill="#c99e56" />
+            <circle cx="70" cy="16" r="2.5" fill="#c99e56" />
+          </svg>
+
+          <p class="invite-question-lead">Are you ready for your surprise?</p>
+          <p class="invite-question-sub">
+            Nmmde korach avaradhams i have put together, some of our favorite memories, laughs, and a special message
+            just for you.
+          </p>
+
+          <!-- Envelope Peek Graphic -->
+          <div class="envelope-peek-preview">
+            <div class="envelope-letter-peeking">
+              <span>open me ✨</span>
+            </div>
+            <!-- Wax Seal Stamped '21' -->
+            <div class="wax-seal">
+              <div class="wax-seal-inner">21</div>
+            </div>
+          </div>
+        </div>
+
+        <button class="vintage-btn" data-next-screen="3">
+          YES, SHOW ME! <span class="btn-arrow-icon">✨</span>
+        </button>
+      </section>
+
+
+      <!-- =================================================================
+           SCREEN 3: FIRST MEMORY REVEAL (POLAROID & SCRAPBOOK)
+           ================================================================= -->
+      <section id="screen-3" class="screen">
+        <button class="vintage-back-btn" data-back-screen="2">← Back</button>
+
+        <div class="screen-header-block">
+          <h2 class="screen-section-title">LA LA LAAAAAAAAA LA LAAAAAAAA</h2>
+          <p class="screen-section-subtitle">Snapshot moments etched in gold</p>
+        </div>
+
+        <div class="memory-scrapbook-stage">
+          <!-- Memory 1: Large Polaroid Tilt Left -->
+          <div class="polaroid-card portrait-frame tilt-left" data-lightbox-src="../IMG-20250709-WA0018.jpg"
+            data-lightbox-caption="From day one... always rocking unmatched vibes!">
+            <div class="washi-tape" style="top: -10px; left: 35%; width: 75px; transform: rotate(-2deg);"></div>
+            <div class="polaroid-photo-frame">
+              <img src="C:\Users\SANJAY\Downloads\Delivary\birthday\images\memory1.jpg" alt="Memory 1"
+                onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <p class="polaroid-caption">From day one... always rocking unmatched vibes 😎</p>
+            <p class="polaroid-date-stamp">ARCHIVE // 01</p>
+          </div>
+
+          <!-- Memory 2: Photobooth 3-Frame Strip -->
+          <div class="photobooth-strip">
+            <div class="washi-tape" style="top: -10px; right: 15px; width: 60px; transform: rotate(4deg);"></div>
+            <div class="photobooth-frame" data-lightbox-src="../IMG-20250724-WA0012.jpg"
+              data-lightbox-caption="Pure happiness & laughter">
+              <img src="C:\Users\SANJAY\Downloads\Delivary\birthday\images\memory2.jpg" alt="Photobooth 1"
+                onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <div class="photobooth-frame" data-lightbox-src="../IMG-20250923-WA0043.jpg"
+              data-lightbox-caption="Unfiltered chaotic joy">
+              <img src="C:\Users\SANJAY\Downloads\Delivary\birthday\images\memory3.jpg" alt="Photobooth 2"
+                onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <div class="photobooth-frame" data-lightbox-src="../IMG-20251029-WA0043.jpg"
+              data-lightbox-caption="Making every second count">
+              <img src="C:\Users\SANJAY\Downloads\Delivary\birthday\images\memory4.jpg" alt="Photobooth 3"
+                onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <div class="photobooth-footer">Click chyu for HD Drishyamikavode kaanuvan</div>
+          </div>
+
+          <!-- Memory 3: Tilt Right Polaroid with Kiss Stamp -->
+          <div class="polaroid-card tilt-right" data-lightbox-src="../IMG-20251218-WA0025.jpg"
+            data-lightbox-caption="Unstoppable laughter, inside jokes only we get!">
+            <svg class="kiss-mark" style="top: 8px; right: 8px; width: 32px;" viewBox="0 0 50 35" fill="#851c27">
+              <path d="M7 16C12 10 20 9 24 13C29 9 37 10 42 15C38 18 32 17 25 15C17 17 12 18 7 16Z" />
+              <path d="M9 19C15 17 21 17 25 18C29 17 35 17 40 19C36 26 30 29 25 28C19 29 13 26 9 19Z" />
+            </svg>
+            <div class="polaroid-photo-frame">
+              <img src="C:\Users\SANJAY\Downloads\Delivary\birthday\images\memory5.jpg" alt="Memory 5"
+                onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <p class="polaroid-caption">Unstoppable laughter, inside jokes only we get ♡</p>
+            <p class="polaroid-date-stamp">ARCHIVE // 02</p>
+          </div>
+        </div>
+
+        <button class="vintage-btn" data-next-screen="4">
+          Turn the page <span class="btn-arrow-icon">→</span>
+        </button>
+      </section>
+
+
+      <!-- =================================================================
+           SCREEN 4: HEARTFELT BIRTHDAY WISHES
+           ================================================================= -->
+      <section id="screen-4" class="screen">
+        <button class="vintage-back-btn" data-back-screen="3">← Back</button>
+
+        <div class="screen-header-block">
+          <h2 class="screen-section-title">Happy 21st Birthday!</h2>
+          <p class="screen-section-subtitle">To my ride-or-die & dearest friend</p>
+        </div>
+
+        <!-- Editorial Wishes Card (Reference Image 2 styling in Cream & Brown) -->
+        <div class="editorial-quote-card">
+          <div class="editorial-quote-mark">“</div>
+          <h3 class="wishes-highlight-text">
+            CONGRATS ON ANOTHER YEAR OF BEING COMPLETELY AMAZING!
+          </h3>
+          <p class="wishes-body-text">
+            May your 21st year be overflowing with good food,MONEYYYY, sweet cake, genuine peace, and zero nonsense and
+            Zero VAlllliii.
+          </p>
+          <p class="wishes-body-text">
+            Hope your special day brings everything your heart desires and more. You have a heart of pure gold, and you
+            deserve all the happiness the universe can give.
+          </p>
+          <p class="wishes-handwritten-ps">
+            Always rooting for you, through every chapter and every milestone.
+          </p>
+        </div>
+
+        <!-- Duo Mini Photo Feature -->
+        <div class="duo-photo-showcase">
+          <div class="polaroid-card tilt-left"
+            data-lightbox-src="C:\Users\SANJAY\Downloads\Delivary\birthday\images\cover2.jpg"
+            data-lightbox-caption="Naan Nadanthaal Athiradii">
+            <div class="polaroid-photo-frame" style="aspect-ratio: 4/5;">
+              <img src="C:\Users\SANJAY\Downloads\Delivary\birthday\images\memory6.jpg" alt="Memory 6"
+                onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <p class="polaroid-caption" style="font-size: 1.15rem;">Hello Gayzzzzz✨</p>
+          </div>
+
+          <div class="polaroid-card tilt-right" data-lightbox-src="../IMG-20261010-WA0078.jpg"
+            data-lightbox-caption="Vayyaatha Pillaar">
+            <div class="polaroid-photo-frame" style="aspect-ratio: 4/5;">
+              <img src="C:\Users\SANJAY\Downloads\Delivary\birthday\images\memory7.jpg" alt="Memory 7"
+                onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <p class="polaroid-caption" style="font-size: 1.15rem;">Zabattikaa</p>
+          </div>
+        </div>
+
+        <button class="vintage-btn" data-next-screen="5">
+          Look at our memory gallery <span class="btn-arrow-icon">→</span>
+        </button>
+      </section>
+
+
+      <!-- =================================================================
+           SCREEN 5: OUR MEMORIES GALLERY (COLLAGE + LIGHTBOX)
+           ================================================================= -->
+      <section id="screen-5" class="screen">
+        <button class="vintage-back-btn" data-back-screen="4">← Back</button>
+
+        <div class="screen-header-block">
+          <h2 class="screen-section-title">Our Memories Gallery</h2>
+          <p class="screen-section-subtitle">Tap any photo to open the scrapbook viewer</p>
+        </div>
+
+        <!-- Collage Mosaic Grid -->
+        <div class="gallery-scrapbook-grid">
+          <!-- Item 1: Wide Banner -->
+          <div class="gallery-item span-2" data-lightbox-src="../IMG-20261010-WA0089.jpg"
+            data-lightbox-caption="Golden memories & laughter that never ends">
+            <div class="washi-tape" style="top: -8px; left: 40%; width: 80px;"></div>
+            <div class="gallery-img-container">
+              <img src="C:\Users\SANJAY\Downloads\Delivary\birthday\images\IMG_1772 (1).JPG" alt="Memory 8"
+                onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <p class="gallery-caption-micro">Golden memories & laughter that never ends</p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="gallery-item" data-lightbox-src="../IMG-20250709-WA0018.jpg"
+            data-lightbox-caption="Living life in full color">
+            <div class="gallery-img-container">
+              <img src="C:\Users\SANJAY\Downloads\Delivary\birthday\images\IMG_20260925_200045.jpg" alt="Gallery 2"
+                onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <p class="gallery-caption-micro">Full color moments</p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="gallery-item" data-lightbox-src="../IMG-20250724-WA0012.jpg"
+            data-lightbox-caption="Adventures big and small">
+            <div class="gallery-img-container">
+              <img src="C:\Users\SANJAY\Downloads\Delivary\birthday\images\IMG_20260925_200403.jpg" alt="Gallery 3"
+                onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <p class="gallery-caption-micro">Always an adventure</p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="gallery-item" data-lightbox-src="../IMG-20250923-WA0043.jpg"
+            data-lightbox-caption="Unconditional support & love">
+            <div class="gallery-img-container">
+              <img src="C:\Users\SANJAY\Downloads\Delivary\birthday\images\IMG-20251229-WA0023.jpg" alt="Gallery 4"
+                onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <p class="gallery-caption-micro">Pure sunshine</p>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="gallery-item" data-lightbox-src="../IMG-20251029-WA0043.jpg"
+            data-lightbox-caption="Through thick and thin">
+            <div class="gallery-img-container">
+              <img src="C:\Users\SANJAY\Downloads\Delivary\birthday\images\20250911_211029.jpg" alt="Gallery 5"
+                onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <p class="gallery-caption-micro">Through thick and thin</p>
+          </div>
+
+          <!-- Item 6: Wide Final Memory -->
+          <div class="gallery-item span-2" data-lightbox-src="../IMG-20251218-WA0025.jpg"
+            data-lightbox-caption="To infinite more chapters together!">
+            <div class="gallery-img-container">
+              <img src="C:\Users\SANJAY\Downloads\Delivary\birthday\images\IMG-20260104-WA0023.jpg" alt="Gallery 6"
+                onerror="this.onerror=null; this.src='images/placeholder.svg';">
+            </div>
+            <p class="gallery-caption-micro">To infinite more chapters together 🥂</p>
+          </div>
+        </div>
+
+        <button class="vintage-btn" data-next-screen="6">
+          I wrote something for you... <span class="btn-arrow-icon">✉️</span>
+        </button>
+      </section>
+
+
+      <!-- =================================================================
+           SCREEN 6: PERSONAL BIRTHDAY LETTER ("A LITTLE LETTER FOR YOU...")
+           ================================================================= -->
+      <section id="screen-6" class="screen">
+        <button class="vintage-back-btn" data-back-screen="5">← Back</button>
+
+        <div class="screen-header-block">
+          <h2 class="screen-section-title">A Little Letter For You...</h2>
+          <p class="screen-section-subtitle">Written straight from the heart</p>
+        </div>
+
+        <!-- Vintage Ruled Stationery Letter -->
+        <article class="vintage-stationery-card">
+          <div class="washi-tape" style="top: -10px; left: calc(50% - 45px); width: 90px; transform: rotate(1deg);">
+          </div>
+
+          <div class="letter-top-seal-row">
+            <span class="letter-date-stamp">CHAPTER 21 • NOVEMBER 2026</span>
+            <div class="wax-seal" style="width: 44px; height: 44px;">
+              <div class="wax-seal-inner" style="width: 34px; height: 34px; font-size: 0.95rem;">21</div>
+            </div>
+          </div>
+
+          <h3 class="letter-salutation">Dearest Jaannu,</h3>
+
+          <!-- EDITABLE LETTER CONTENT (Easy for user to edit) -->
+          <div class="letter-body-content">
+            <p>
+              Happy 21st Birthday! Today you have successfully completed 21 rounds around the sun, ya thats something
+              cliche everyone used to say ryt,most radiant soul I
+              know. Thank you for being born(cringified rn),how effortless our bond has stayed through
+              every twist and turn.
+            </p>
+            <p>
+              Thank you for being my anchor when things get overwhelming, u will always be my fav partner to move with
+              the beat,
+              and the person I can always be 100% myself with without a single ounce of hesitation.
+            </p>
+            <p>
+              I hope this 21st year brings you answered prayers, exciting new horizons, courage to chase whatever
+              sets your soul on fire, and memories that make you smile for years to come.
+            </p>
+          </div>
+
+          <div class="letter-signoff">
+            <p class="letter-signoff-line">Favorite Place,</p>
+            <div class="letter-signature">Always & Forever ♡</div>
+          </div>
+        </article>
+
+        <button class="vintage-btn btn-burgundy" data-next-screen="7">
+          Blow out the candles! <span class="btn-arrow-icon">🎂</span>
+        </button>
+      </section>
+
+
+      <!-- =================================================================
+           SCREEN 7: ANIMATED BIRTHDAY CAKE & WISH INTERACTION
+           ================================================================= -->
+      <section id="screen-7" class="screen">
+        <button class="vintage-back-btn" data-back-screen="6">← Back</button>
+
+        <div class="screen-header-block">
+          <h2 class="screen-section-title">Make a 21st Wish!</h2>
+          <p class="screen-section-subtitle">Close your eyes, think of your biggest dream...</p>
+        </div>
+
+        <!-- Interactive Animated Cake Stage -->
+        <div class="cake-stage-container">
+          <!-- Canvas for celebratory confetti explosion -->
+          <canvas id="confetti-canvas"></canvas>
+
+          <!-- Candles (2 & 1) with Animated Flames & Smoke -->
+          <div class="candles-row">
+            <!-- Candle 1 -->
+            <div class="candle">
+              <div class="candle-wick"></div>
+              <div class="candle-flame"></div>
+              <div class="candle-smoke"></div>
+            </div>
+            <!-- Candle 2 -->
+            <div class="candle">
+              <div class="candle-wick"></div>
+              <div class="candle-flame"></div>
+              <div class="candle-smoke"></div>
+            </div>
+          </div>
+
+          <!-- Top Tier -->
+          <div class="cake-top-tier">
+            <div class="cake-piping-top"></div>
+          </div>
+
+          <!-- Bottom Tier -->
+          <div class="cake-bottom-tier">
+            <div class="cake-chocolate-drip"></div>
+          </div>
+
+          <!-- Vintage Cake Stand -->
+          <div class="cake-stand"></div>
+        </div>
+
+        <!-- Interactive Blow Candles Button -->
+        <button id="blow-candles-btn" class="vintage-btn">
+          Make a wish & blow out the candles! <span class="btn-arrow-icon">🕯️</span>
+        </button>
+
+        <!-- Wish Reveal Box (Shown after candles are extinguished) -->
+        <div id="wish-reveal-box" class="wish-reveal-box">
+          <h3 class="wish-reveal-heading">✨ Your Wish is Sent to the Stars! ✨</h3>
+          <p class="wish-reveal-text">
+            May all 21 candles bring you 21x the love, joy, adventures, and dreams fulfilled this year!
+          </p>
+          <button class="vintage-btn" data-next-screen="8" style="margin-top: 18px;">
+            Wait... there's one more thing! <span class="btn-arrow-icon">🎁</span>
+          </button>
+        </div>
+      </section>
+
+
+      <!-- =================================================================
+           SCREEN 8: HIDDEN SURPRISE MESSAGE
+           ================================================================= -->
+      <section id="screen-8" class="screen">
+        <button class="vintage-back-btn" data-back-screen="7">← Back</button>
+
+        <div class="screen-header-block">
+          <h2 class="screen-section-title">Wait... There's One More Thing!</h2>
+          <p class="screen-section-subtitle">A final secret saved just for this moment</p>
+        </div>
+
+        <div class="final-surprise-box">
+          <!-- Sealed Envelope Graphic -->
+          <div id="secret-envelope" class="secret-envelope-graphic">
+            <div class="secret-envelope-flap"></div>
+            <div class="wax-seal" style="width: 40px; height: 40px; z-index: 2;">
+              <div class="wax-seal-inner" style="width: 30px; height: 30px; font-size: 0.85rem;">♡</div>
+            </div>
+          </div>
+
+          <button id="open-surprise-btn" class="vintage-btn btn-burgundy">
+            Open your final surprise <span class="btn-arrow-icon">💌</span>
+          </button>
+
+          <!-- Hidden Heartfelt Message Panel (Revealed on click) -->
+          <div id="hidden-message-panel" class="hidden-message-panel">
+            <p class="final-quote">
+              No matter how many years pass, how busy life gets, or where our separate roads take us, you will always
+              have a sister in me and I will be there for u. Thank you for your incredible light in this world.
+            </p>
+            <div class="final-cheers">
+              Happy 21st Birthday, Beautiful Soul! 🥂✨
+            </div>
+            <p
+              style="font-family: var(--font-body); font-style: italic; color: var(--text-warm-sepia); margin-top: 10px;">
+              Here's to the memories behind us and the endless adventures ahead!
+            </p>
+
+            <button id="replay-scrapbook-btn" class="vintage-btn" style="margin-top: 22px;">
+              Flip through the scrapbook again <span class="btn-arrow-icon">📖</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Floating Rose Petals Layer -->
+        <div id="floating-petal-container" class="floating-petal-layer"></div>
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <!-- =====================================================================
+       LIGHTBOX MODAL (FOR FULL-SCREEN PHOTO PREVIEWS)
+       ===================================================================== -->
+  <div id="vintage-lightbox" class="vintage-lightbox">
+    <div class="lightbox-content-box">
+      <button id="lightbox-close-btn" class="lightbox-close-btn" title="Close photo">✕</button>
+      <div class="lightbox-img-wrapper">
+        <img id="lightbox-img" src="" alt="Enlarged Memory">
+      </div>
+      <p id="lightbox-caption" class="lightbox-caption-text"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

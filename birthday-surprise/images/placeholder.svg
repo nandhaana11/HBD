@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="parchmentGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#faf5ec"/>
+      <stop offset="50%" stop-color="#f2e8d5"/>
+      <stop offset="100%" stop-color="#e9ddc4"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background Paper -->
+  <rect width="100%" height="100%" fill="url(#parchmentGrad)"/>
+  
+  <!-- Subtle Border Frame -->
+  <rect x="20" y="20" width="360" height="360" fill="none" stroke="#cfbe9f" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Vintage Camera Icon -->
+  <g transform="translate(140, 110)" filter="url(#shadow)">
+    <!-- Camera Body -->
+    <rect x="0" y="30" width="120" height="85" rx="10" fill="#432818"/>
+    <!-- Top prism -->
+    <path d="M35 30 L45 15 L75 15 L85 30 Z" fill="#321e12"/>
+    <!-- Flash button -->
+    <circle cx="25" cy="22" r="5" fill="#851c27"/>
+    <!-- Lens outer -->
+    <circle cx="60" cy="72" r="30" fill="#f4ecdc" stroke="#25160d" stroke-width="4"/>
+    <!-- Lens inner -->
+    <circle cx="60" cy="72" r="18" fill="#321e12"/>
+    <circle cx="54" cy="66" r="6" fill="#fff" opacity="0.6"/>
+  </g>
+
+  <!-- Pressed Dried Flower Accent -->
+  <path d="M200 245 C190 230 210 230 200 245 Z" fill="#851c27"/>
+  <circle cx="200" cy="245" r="3" fill="#c99e56"/>
+
+  <!-- Text -->
+  <text x="200" y="280" font-family="Georgia, serif" font-size="19" font-weight="bold" fill="#321e12" text-anchor="middle" letter-spacing="1">
+    PRECIOUS MEMORY
+  </text>
+  <text x="200" y="310" font-family="'Courier New', monospace" font-size="12" fill="#765845" text-anchor="middle">
+    [ Click to View or Drop Photo Here ]
+  </text>
+  <text x="200" y="335" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#851c27" text-anchor="middle">
+    21st Birthday Milestone Edition
+  </text>
+</svg>
+
