@@ -81,14 +81,9 @@ function goToScreen(index) {
 
   if (!nextScreen) return;
 
-  // Animate exit of current screen
+  // Hide current screen immediately so it takes 0 space and doesn't push down
   if (currentScreen) {
     currentScreen.classList.remove("active");
-    currentScreen.classList.add("leaving");
-
-    setTimeout(() => {
-      currentScreen.classList.remove("leaving");
-    }, 600);
   }
 
   // Activate next screen
@@ -100,9 +95,13 @@ function goToScreen(index) {
     chapterBadge.textContent = chapterTitles[index - 1] || `Chapter ${index} of ${totalScreens}`;
   }
 
-  // Scroll viewport smoothly to top
-  window.scrollTo({ top: 0, behavior: "smooth" });
-  nextScreen.scrollTo({ top: 0, behavior: "smooth" });
+  // Immediately reset all scroll positions to 0 so content starts at top
+  window.scrollTo(0, 0);
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  const viewport = document.getElementById("app-viewport");
+  if (viewport) viewport.scrollTop = 0;
+  nextScreen.scrollTop = 0;
 }
 
 /* ============================================================================
